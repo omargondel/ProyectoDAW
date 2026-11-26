@@ -85,36 +85,37 @@ Numera RF (funcional), RNF (no funcional), REST (restricción). Cada uno con med
 
 | Objetivo | Requisito | Caso de uso | Pantalla o endpoint | Prueba o indicador |
 |---|---|---|---|---|
-| OBJ-01 Publicar registro de vuelta | RF-01, RF-03, RF-04 | CU-01 Alta de hotlap | POST /hotlaps | pendiente |
-| OBJ-02 Explorar rankings filtrables | RF-02, RF-07 | CU-02 Consulta de ranking | GET /hotlaps | pendiente |
-| OBJ-03 Gestionar usuarios | RF-06 | CU-03 Registro/login | POST /auth/* | pendiente |
-| OBJ-04 Crear torneos (prescindible) | RF-05 | CU-04 Gestión de torneo | /tournaments | pendiente |
+| OBJ-01 Publicar registro de vuelta | RF-01, RF-03, RF-04 | CU-01 Alta de hotlap | POST /hotlaps | Prueba de aceptacion: se registra un hotlap con video y comentario y se consulta en BD |
+| OBJ-02 Explorar rankings filtrables | RF-02, RF-07 | CU-02 Consulta de ranking | GET /hotlaps | Prueba con datos de ejemplo: ranking filtrado y ordenado en menos de 2 s |
+| OBJ-03 Gestionar usuarios | RF-06 | CU-03 Registro/login | POST /auth/* | Prueba de autenticacion y revision de hash de contraseñas |
+| OBJ-04 Crear torneos (prescindible) | RF-05 | CU-04 Gestión de torneo | /tournaments | Prueba CRUD de torneo (funcionalidad prescindible) |
 
 ## 5. Obligaciones fiscales, laborales y de prevención (CE 1g)
 
 Proyecto académico sin actividad económica real: **no aplica** IVA/IRPF por actividad. Se documentan las que aplicarían si se comercializara:
-- Alta censal y obligaciones tributarias (IAE, IVA, IRPF/IS) si hubiera ingresos.
-- Protección de datos: RGPD (Reglamento (UE) 2016/679) y LOPDGDD (Ley Orgánica 3/2018) — enlace BOE verificado: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673 (acceso 2026-11-19).
-- Cookies y servicios de la sociedad de la información: Ley 34/2002 (LSSI) — https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758.
-- Prevención de riesgos laborales si hubiera empleados: Ley 31/1995 — https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292.
-- Propiedad intelectual de logos, videos y contenidos de terceros.
+- Alta censal y obligaciones tributarias (IAE, IVA, IRPF/IS) si hubiera ingresos. Estado: sin leer (no aplica: proyecto academico sin actividad economica).
+- Protección de datos: RGPD (Reglamento (UE) 2016/679) y LOPDGDD (Ley Orgánica 3/2018) — enlace BOE verificado: https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673 (acceso 2026-11-19). Estado: leido.
+- Cookies y servicios de la sociedad de la información: Ley 34/2002 (LSSI) — https://www.boe.es/buscar/act.php?id=BOE-A-2002-13758. Estado: sin leer.
+- Prevención de riesgos laborales si hubiera empleados: Ley 31/1995 — https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292. Estado: sin leer.
+- Propiedad intelectual de logos, videos y contenidos de terceros. Estado: sin leer.
 
 ## 6. Ayudas y subvenciones (CE 1h)
 
-Ejemplo real (genérico, convocatorias periódicas): **Kit Digital** (Red.es) — ayuda para digitalización de pymes/autónomos. Fuente: https://www.red.es/es/iniciativas/proyectos/kit-digital (acceso 2026-11-19). Requisitos y plazo dependen de cada convocatoria; verificar en la fuente antes de solicitar. Estado: sin leer (no se ha solicitado).
+Ayuda real: **Programa Pyme Digital 2026** (Cámara de Comercio de Avilés), BDNS 927280, cofinanciado FEDER. Fuente: https://www.subvenciones.gob.es/bdnstrans/A03/es/convocatorias/927280 (acceso 2026-11-26) y extracto BOPA https://miprincipado.asturias.es/bopa/2026/09/09/2026-07348.pdf. Quién puede pedirla: pymes de la demarcación territorial de la Cámara de Comercio de Avilés, dadas de alta en el censo del IAE (excluidas empresas proveedoras de soluciones de digitalización). Qué cubre: soluciones TIC subvencionadas al 60%, hasta 4.494 euros por empresa sobre presupuesto elegible maximo de 7.490 euros. Plazo: 01/09/2026 a 16/10/2026. Estado: cerrada (no solicitada). No aplicable directamente a un proyecto académico; se documenta como ejemplo real.
 
 ## 7. Guion de trabajo (CE 1i)
 
-Fases e hitos (responsable único: alumno; tablero en GitHub Projects del repositorio):
+Fases e hitos (responsable: alumno; tablero en GitHub Projects del repositorio):
 
-| Fase | Actividad | Hito |
-|---|---|---|
-| 1 | Análisis y SOTA (01, 01b) | H1 26-nov-2026 |
-| 2 | Diseño (modelo de datos, UI) | H2 21-ene-2027 |
-| 3 | Implementación backend (Java/Spring) | — |
-| 4 | Implementación frontend (JS) | — |
-| 5 | Pruebas y despliegue | — |
-| 6 | Documentación final y entrega | Entrega final (fecha por confirmar) |
+| Fase | Fechas | Tareas principales | Responsable | Hito |
+|---|---|---|---|---|
+| 1 Análisis | hasta 26-nov-2026 | Estudio del sector, requisitos, obligaciones y ayudas | Yo | H1 26-nov-2026 |
+| 2 Diseño | 26-nov a 10-dic-2026 | Viabilidad, alcance, arquitectura y datos | Yo; tutor revisa | |
+| 3 Planificación | 10-dic a 21-ene-2027 | Cronograma, riesgos y presupuesto | Yo | H2 21-ene-2027 |
+| 4 Implementación | 21-ene a 31-mar-2027 | Backend Java/Spring, frontend JS, primera versión mínima funcional | Yo | |
+| 5 Pruebas | 1-abr a 23-abr-2027 | Plan de pruebas y corrección de fallos | Yo | |
+| 6 Despliegue | 26-abr a 7-may-2027 | Puesta en marcha y guía de despliegue | Yo | H3 7-may-2027 |
+| 7 Cierre | hasta 18-jun-2027 | Memoria y defensa | Yo; tutor evalúa | |
 
 ## 8. Glosario
 

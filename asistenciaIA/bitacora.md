@@ -6,4 +6,4 @@ Esta bitácora **hace de declaración de uso de IA** del módulo.
 
 | Fecha | Agente y modelo | Qué pedí | Qué acepté o cambié | Dónde quedó | Revisión humana |
 |---|---|---|---|---|---|
-| *(ejemplo ficticio, bórralo)* 2026-11-17 | `guia` con `opencode/deepseek-v4.1-flash-free` | «Guíame en el paso 0» | Seguí sus pasos; el nombre del repositorio lo cambié a mano | (sin ficheros) | sí |
+| 2026-11-26 | `documentador` con `opencode/beam-free` | Asistencia para H1 | Se dieron ideas para docs/01-analisis.md (matriz, obligaciones, ayuda, guion) | docs/01-analisis.md | sí |
